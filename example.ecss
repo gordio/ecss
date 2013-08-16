@@ -4,73 +4,73 @@
 
 
 // Variabless
-$var1 = 10;
-$var2 = "left-right";
+$var1 = 10
+$var2 = "left-right"
 
-$var1++;
+$var1++
 
 
 // Operations
-$var3 = $var1 * 2 + 2;
-$sum = 30 + 30 - $var3;
+$var3 = $var1 * 2 + 2
+$sum = 30 + 30 - $var3
 
 
 // Logic
 if ($var1 >= 10) {
-	text-shadow: 0 0 10px #FFF;
+	text-shadow: 0 0 10px #FFF
 } else {
-	text-shadow: 0 0 ${var1}px #FFF;
+	text-shadow: 0 0 ${var1}px #FFF
 }
 
 
 // Macros
 hello($arg1="def-value") {
-	text-shadow: $arg1;
+	text-shadow: $arg1
 }
 border-radius($radius=3) {
 	if (!$support_old) {
-	-webkit-border-radius: ${radius}px;
-	   -moz-border-radius: ${radius}px;
-	    -ms-border-radius: ${radius}px;
-	     -o-border-radius: ${radius}px;
+	-webkit-border-radius: ${radius}px
+	   -moz-border-radius: ${radius}px
+	    -ms-border-radius: ${radius}px
+	     -o-border-radius: ${radius}px
 	}
-	        border-radius: ${radius}px;
+	        border-radius: ${radius}px
 }
 
 
 // Nested
 .header {
-	color: #FFF;
+	color: #FFF
 	
 	a {
-		background: #000;
+		background: #000
 	}
 }
 
 
 // Functions (static)
 shade(1.2, $bbg_color)
-mix($color1, shade(30, $color3));
+mix($color1, shade(30, $color3))
 
 
 // Example
-$normal_color = #E0E0E0;
-$active_color = #A30000;
-$background_color = #222222;
+$normal_color = #E0E0E0
+$active_color = #A30000
+$background_color = #222222
 
 .header {
-	color: shade(1.1, $normal_color);
+	color: shade(1.1, $normal_color)
 
 	&:hover {
-		background: $background_color;
+		background: $background_color
 	}
 
 	&.nav {
-		background: $background_color;
+		background: $background_color
 	}
 
 	.nav {
-		background: $background_color;
+		background: $background_color
 	}
 }
 
@@ -80,3 +80,5 @@ $background_color = #222222;
 .header:hover {background:#222}
 .header.nav {background:#222}
 .header .nav {background:#222}
+
+/* vim: set fdm=marker fdc=0 ts=4 sw=4 tw=80 fo-=t ff=unix ft=ecss:*/
