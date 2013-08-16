@@ -61,7 +61,11 @@ $background_color = #222222;
 .header {
 	color: shade(1.1, $normal_color);
 
-	:hover {
+	&:hover {
+		background: $background_color;
+	}
+
+	&.nav {
 		background: $background_color;
 	}
 
@@ -74,4 +78,5 @@ $background_color = #222222;
 // Compiled to
 .header {color:#E0E0E0}
 .header:hover {background:#222}
+.header.nav {background:#222}
 .header .nav {background:#222}
